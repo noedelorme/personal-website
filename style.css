@@ -1,0 +1,106 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #27303b;
+}
+
+a, a:active, a:hover{
+    color: blue;
+}
+a:hover{
+    text-decoration: underline;
+}
+a.secret{
+    color: #27303b;
+}
+
+.container{
+    width: 1100px;
+    margin: auto;
+    padding: 200px 30px;
+}
+
+h1{
+    font-size: 70px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.text{
+    font-size: 30px;
+    font-family: 'Noto Serif', serif;
+    line-height: 45px;
+    margin-bottom: 25px;
+    text-align: justify;
+}
+.text a{
+    text-decoration: none;
+}
+.text a:hover{
+    text-decoration: underline;
+}
+
+ul.social{
+    list-style: none;
+}
+ul.social li i, ul.social li a{
+    display: inline-block;
+    font-size: 20px;
+}
+ul.social li i{
+    width: 20px;
+    text-align: right;
+    margin-right: 5px;
+}
+
+#particles{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
+@media screen and (max-width: 1100px){
+    .container{
+        width: 100%;
+        padding: 120px 40px;
+    }
+    h1{
+        font-size: 57px;
+    }
+}
+@media screen and (max-width: 900px){
+    .container{
+        padding: 90px 40px;
+    }
+    h1{
+        font-size: 45px;
+    }
+    .text{
+        font-size: 25px;
+        line-height: 35px;
+    }
+}
+@media screen and (max-width: 500px){
+    .container{
+        padding: 30px 30px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    .text{
+        font-size: 20px;
+        line-height: 34px;
+        text-align: left;
+    }
+}
